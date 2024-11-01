@@ -1,0 +1,13 @@
+.product{
+    padding: 5.75rem 0rem;
+}
+.product-header-text{
+    padding-left: 9.625rem;
+}
+.products{
+    overflow: scroll;
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+    gap: 53px;  
+}   

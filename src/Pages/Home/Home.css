@@ -1,0 +1,196 @@
+.header{
+    padding: 1.875rem 9.625rem;
+}
+.home-header{
+    position: relative;
+    height: 700px;
+    background-image: url("../../Assets/homed.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -80px;
+}
+.header-content{
+    margin-top: 115px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.header-content p{
+    font-size: 1.125rem;
+    font-weight: 400px;
+    color: #12305B;
+}
+.header-content h1{
+    font-size: 3.75rem;
+    font-weight: 700px;
+    color: #12305B;
+}
+.header-content button{
+    margin-top: 7px;
+    width: max-content;
+    padding: 1rem 4.9rem;
+    background-color: #FC5959;
+    border: none;
+    border-radius: 5px;
+    font-family:"Open Sans";
+    font-size: 0.875rem;
+    font-weight: 700px;
+    color: #FFFFFF;
+}
+.sponsors{
+    position: absolute;
+    right: 0;
+    bottom: -3rem;
+    width: 80%;
+    background-color: white;
+    padding: 2.3rem 4.5rem;
+    box-shadow: 50px 50px 100px 0px #00000025;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.sponsors img{
+    width: 146px;
+    height: 51px;
+    object-fit: contain;
+}
+.sponsors .forbes img{
+    width: 129px;
+    height: 32px;
+    object-fit: contain;
+}
+.shop-now{
+    /* border-top: 6px solid #21384218; */
+    display: flex;
+    align-items: center;
+    padding: 4rem 9.625rem 4rem 0rem;
+}
+.shop-now-image{
+    width: 60%;
+    position: relative;
+}
+.shop-now-image-details{
+    position: absolute;
+    right: 5rem;
+    bottom: 4rem;
+    padding: 1.875rem;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 50px 50px 100px #00000025;
+}
+.shop-now-image-details p{
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 400px;
+    color: #4D533C;
+}
+.shop-now-image img{
+    width: 100%;
+}
+.shop-now-details{
+    width:40%;
+}
+.show-now-subtext{
+    margin-top: 27px;
+}
+.shop-now-details button{
+    margin-top: 27px;
+    width: max-content;
+    padding: 1rem 4.9rem;
+    background-color: #FC5959;
+    border: none;
+    border-radius: 5px;
+    font-family:"Open Sans";
+    font-size: 0.875rem;
+    font-weight: 700px;
+    color: #FFFFFF;
+}
+.mission{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 135px;
+    padding: 4rem 0rem 4rem 9.625rem;
+}
+.mission-text{
+    width: 35%;
+}
+.mission-image{
+    width: 65%;
+}
+.mission-image img{
+    width: 100%;
+}
+.visit{
+    padding: 7rem 0rem 10rem 0rem;
+    margin: 0rem 9.625rem;
+    border-bottom: 1px solid #21384218;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.visit-header-text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.visit-subtext{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.visit button{
+    width: max-content;
+    padding: 1rem 4.9rem;
+    background-color: #FC5959;
+    border: none;
+    border-radius: 5px;
+    font-family:"Open Sans";
+    font-size: 0.875rem;
+    font-weight: 700px;
+    color: #FFFFFF;
+}
+@media only screen and (max-width: 1290px){
+    .header{
+        padding: 1.875rem 8rem;
+    }
+}
+@media only screen and (max-width: 1100px){
+    .header{
+        padding: 1.875rem 6rem;
+    }
+    .home-header{
+        background-position: center top;
+    }
+    .header-content p{
+        font-size: 1rem;
+    }
+    .header-content h1{
+        font-size: 2.75rem;
+        font-weight: 700px;
+        color: #12305B;
+    }
+    .header-content button{
+        margin-top: 7px;
+        width: max-content;
+        padding: 1rem 3.9rem;
+        background-color: #FC5959;
+        border: none;
+        border-radius: 5px;
+        font-family:"Open Sans";
+        font-size: 0.875rem;
+        font-weight: 700px;
+        color: #FFFFFF;
+    }
+    .sponsors{
+        width: 90%;
+        padding: 1.3rem 2.5rem;
+        overflow-x: scroll;
+    }
+    .sponsors::-webkit-scrollbar{
+        display: none;
+    }
+    .sponsors img{
+        width: 116px;
+    }
+}

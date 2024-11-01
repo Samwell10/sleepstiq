@@ -1,0 +1,55 @@
+.testimonial-card{
+    background-color:  #FBF9F2;
+    padding: 1.375rem 1.875rem;
+    border-radius: 8px;   
+}
+.testimonial-text{
+    width: 268px;
+    height: 78px;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+    color: #4D533C;
+}
+.testimonial-author{
+    margin-top: 30px;
+    font-size: 1rem;
+    font-weight: 700; 
+    color: #4D533C;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.rating svg{
+    color: #27AE60;
+    font-size: 0.75rem;
+}
+.product-card{
+    width: 306px;
+    box-shadow: 1px 50px 100px #00000025;
+}
+.product-card img{
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    z-index: 6;
+}
+.product-details{
+    background-color: #FFFFFF;
+    padding: 1rem 1.8rem 2rem 1.8rem;
+    border-radius: 0px 0px 8px 8px;
+    z-index: 6;
+}
+.product-details-subtext{
+    height: 78px;
+    font-style: italic;
+    color: #4D533C;
+}
+.product-name{
+    margin-top: 38px;
+    font-size: 1rem;
+    font-weight: 700; 
+    color: #4D533C;
+}
