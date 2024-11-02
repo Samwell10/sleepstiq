@@ -9,6 +9,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import TestimonialCard from "../Card/TestimonialCard";
+import Testimonial from "../Testimonial/Testimonial";
 const Customer = () => {
     return ( 
         <div className="customer-outer">
@@ -50,15 +51,7 @@ const Customer = () => {
                     </Swiper>
                 </div>
             </div>
-            <div className="customer-review">
-                {Testimonials.map((testimony)=>(
-                    <TestimonialCard
-                        message={testimony.text}
-                        name={testimony.name}
-                        rate={testimony.rate}
-                    />
-                ))}
-            </div>
+           <Testimonial/>
         </div>
     );
 }

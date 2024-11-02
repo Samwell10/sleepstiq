@@ -3,6 +3,7 @@
 }
 .customer{
     margin-top: 176px;
+    margin-bottom: 140px;
     padding: 1.875rem 9.625rem;
     display: flex;
     align-items: center;
@@ -83,10 +84,11 @@
     color: #152934;
 }
 .customer-review{
+    margin-bottom: 60px;
     padding-left: 9.625rem;
     width: 100%;
     overflow-x: scroll;
-    margin-top: 154px;
+    margin-top: 4px;
     display: flex;
     align-items: center;
     gap: 26px;
