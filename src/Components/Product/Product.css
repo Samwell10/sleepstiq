@@ -17,3 +17,15 @@
 .products::-webkit-scrollbar{
     display:none;
 }
+@media only screen and (max-width: 800px){
+    .product{
+        padding: 3rem 0rem 0rem 0rem;
+        /* background-color: #00000025; */
+    }
+    .product-header-text{
+        padding-left: 2rem;
+    }
+    .products{
+        padding: 5rem 0rem 5.75rem 2rem;
+    }   
+}

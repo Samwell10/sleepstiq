@@ -115,3 +115,24 @@
         font-size: 0.9rem;
     }
 }
+@media only screen and (max-width: 800px){
+    .customer{
+        margin-top: 150px;
+        margin-bottom: 100px;
+        padding: 1.875rem 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: space-between;
+        gap: 100px;
+    }
+    .customer-left{
+        width: 100%;
+    }
+    .customer-right{
+        width: 100%;
+    }
+    .header-text-customer{
+        font-size: 1.7rem;
+    }
+}
