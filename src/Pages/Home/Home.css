@@ -193,4 +193,25 @@
     .sponsors img{
         width: 116px;
     }
+    .shop-now{
+        padding: 2rem 6rem 3rem 0rem;
+    }
+    .shop-now-image-details{
+        right: 4rem;
+        bottom: 2rem;
+        padding: 1rem;
+    }
+    .shop-now-image-details p{
+        font-size: 0.6rem;
+    }
+    .mission{
+        gap: 100px;
+        padding: 4rem 0rem 4rem 6rem;
+    }
+    .mission-text{
+        width:40%;
+    }
+    .mission-image{
+        width: 60%;
+    }
 }

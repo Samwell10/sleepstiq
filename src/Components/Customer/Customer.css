@@ -96,3 +96,22 @@
 .customer-review::-webkit-scrollbar{
     display: none;
 }
+@media only screen and (max-width: 1100px){
+    .customer{
+        padding: 1.875rem 6rem;
+        gap: 100px;
+    }
+    .customer-text{
+        font-size: 1rem;
+    }
+    .customer-author img{
+        width: 64px;
+        height: 64px;
+    }
+    .customer-name{
+        font-size: 0.8rem;
+    }
+    .customer-title{
+        font-size: 0.9rem;
+    }
+}

@@ -46,6 +46,8 @@
 .about-text{
     color: #FFFFFF;
     margin-bottom: 21px;
+    font-size: 1rem;
+    font-weight: 400;
 }
 .about-text span{
     color: #8FE2FF;
@@ -74,4 +76,36 @@
 .contact-icon svg{
     font-size: 1.2rem;
     color: #12305B;
+}
+@media only screen and (max-width: 1100px){
+    .footer{
+        padding: 2.1875rem 2rem;
+    }
+    .footer-about{
+        width: 35%;
+    }
+    .nav-head{
+        margin-bottom: 21px;
+        font-size: 0.8rem;
+    }
+    .nav-body{
+        margin-bottom: 16px;
+        font-size: 0.8rem;
+    }
+    .nav-body-2{
+        font-size: 0.8rem;
+    }
+    .about-text{
+        font-size: 0.8rem;
+    }
+    .nav-email{
+        font-size: 1.2rem;
+    }
+    .contact-icon{
+        width: 23px;
+        height: 23px;
+    }
+    .contact-icon svg{
+        font-size: 1rem;
+    }
 }
