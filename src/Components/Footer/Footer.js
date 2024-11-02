@@ -1,5 +1,6 @@
 import "./Footer.css"
 import logo from "../../Assets/white-logo.png"
+import { FaFacebookF, FaGooglePlusG, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 const Footer = () => {
     return ( 
         <div className="footer">
@@ -34,7 +35,22 @@ const Footer = () => {
                 <div className="footer-contact">
                     <p className="nav-head">GET IN TOUCH</p>
                     <p className="nav-body">Feel free to get in touch with us vai email</p>
-                    <p className="nav-email">hello@sleepstiq.com</p>               
+                    <p className="nav-email">hello@sleepstiq.com</p>        
+                    <div className="footer-contact-icon">
+                        <div className="contact-icon">
+                            <FaFacebookF/>
+                        </div>
+                        <div className="contact-icon">
+                            <FaTwitter/>
+                        </div>
+                        <div className="contact-icon">
+                            <FaGooglePlusG />
+                        </div>
+                        <div className="contact-icon">
+                            <FaLinkedinIn />
+                        </div>
+                    </div>
+                    <p className="nav-body">© 2020@sleepstiq. All Rights Reserved.</p>    
                 </div>
             </div>
         </div>
