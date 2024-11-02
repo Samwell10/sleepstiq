@@ -1,13 +1,19 @@
 .product{
-    padding: 5.75rem 0rem;
+    padding: 5.75rem 0rem 0rem 0rem;
+    /* background-color: #00000025; */
 }
 .product-header-text{
     padding-left: 9.625rem;
 }
 .products{
-    overflow: scroll;
-    margin-top: 52px;
+    padding: 5rem 0rem 5.75rem 9.625rem;
+    width: 100%;
+    overflow-y: visible;
+    overflow-x: scroll;
     display: flex;
     align-items: center;
-    gap: 53px;  
+    gap: 53px;
 }   
+.products::-webkit-scrollbar{
+    display:none;
+}

@@ -27,8 +27,8 @@
     font-size: 0.75rem;
 }
 .product-card{
-    width: 306px;
-    box-shadow: 1px 50px 100px #00000025;
+    width: 100%;
+    box-shadow: 50px 50px 100px #00000025;
 }
 .product-card img{
     width: 100%;
@@ -37,12 +37,14 @@
     z-index: 6;
 }
 .product-details{
+    margin-top: -10px;
     background-color: #FFFFFF;
     padding: 1rem 1.8rem 2rem 1.8rem;
     border-radius: 0px 0px 8px 8px;
     z-index: 6;
 }
 .product-details-subtext{
+    width: 268px;
     height: 78px;
     font-style: italic;
     color: #4D533C;
