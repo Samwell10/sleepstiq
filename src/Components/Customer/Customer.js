@@ -1,4 +1,5 @@
 import "./Customer.css"
+import { motion } from "framer-motion";
 import { IoMdArrowDropright } from "react-icons/io";
 import { CustomerTestimonials, Testimonials } from "../data";
 import profile from "../../Assets/person.png"
@@ -15,15 +16,44 @@ const Customer = () => {
         <div className="customer-outer">
             <div className="customer">
                 <div className="customer-left">
-                    <p className="preamble preamble-customer">Our Amazing Story</p>
-                    <h2 className="header-text header-text-customer">10k+Happy Customers</h2>
-                    <p className="subtext subtext-customer">There’s no secret sauce, no wizard behind the curtain. What makes Aerolab tick is an interdisciplinary team with a framework that fosters candid collaboration.</p>
-                    <div className="customer-nav">
+                    <motion.p 
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ type: "spring", duration: 1, delay: 0.4 }}
+                        className="preamble preamble-customer"
+                    >
+                        Our Amazing Story
+                    </motion.p>
+                    <motion.h2 
+                        initial={{ y: 100, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ type: "spring", duration: 1, delay: 0.8 }}
+                        className="header-text header-text-customer"
+                    >
+                        10k+Happy Customers
+                    </motion.h2>
+                    <motion.p 
+                        initial={{ y: 50, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ type: "spring", duration: 1, delay: 1.4 }}
+                        className="subtext subtext-customer"
+                    >
+                            There’s no secret sauce, no wizard behind the curtain. What makes Aerolab tick is an interdisciplinary team with a framework that fosters candid collaboration.
+                    </motion.p>
+                    <motion.div 
+                    initial={{ x: 100, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    transition={{ type: "spring", duration: 1, delay: 1.8 }}
+                    className="customer-nav">
                         <IoMdArrowDropright />
                         <p>More know About us</p>
-                    </div>
+                    </motion.div>
                 </div>
-                <div className="customer-right">
+                <motion.div 
+                initial={{ y: -100, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ type: "spring", duration: 1, delay: 0.4 }}
+                className="customer-right">
                     <Swiper
                         autoplay={{ delay: 3000, disableOnInteraction: false }}
                         modules={[Navigation, Autoplay, Pagination, Scrollbar, A11y]}
@@ -49,7 +79,7 @@ const Customer = () => {
                             </SwiperSlide>
                         ))}
                     </Swiper>
-                </div>
+                </motion.div>
             </div>
            <Testimonial/>
         </div>

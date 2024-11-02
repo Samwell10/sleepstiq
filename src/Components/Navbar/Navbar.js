@@ -1,10 +1,11 @@
 import "./Navbar.css"
 import logo from "../../Assets/logo.png"
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
 const Navbar = () => {
     const [navshow, setnavshow] = useState(false)
+    const location = useLocation();
     
     const handleNav = () => {
         setnavshow(!navshow)
@@ -25,10 +26,10 @@ const Navbar = () => {
                 </div>
                 <nav>
                     <ul>
-                        <Link to="/"><li>Home</li></Link>
-                        <Link to="/about"><li>About</li></Link>
+                        <Link to="/" className={location.pathname === "/" ? "active" : ""}><li>Home</li></Link>
+                        <Link to="/about" className={location.pathname === "/about" ? "active" : ""}><li>About</li></Link>
                         <li>Shop</li>
-                        <Link to="/FAQs"><li>FAQs</li></Link>
+                        <Link to="/FAQs" className={location.pathname === "/FAQs" ? "active" : ""}><li>FAQs</li></Link>
                     </ul>
                 </nav>
             </div>

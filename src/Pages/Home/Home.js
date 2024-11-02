@@ -177,9 +177,24 @@ const Home = () => {
                 </div>
             </div>
             <div className="visit">
-                <h2 className="header-text visit-header-text">Visit Our Shop</h2>
-                <p className="subtext visit-subtext">Our Personal Diffuser is an aromatherapy device that contains a blend of melatonin, lavender, and chamomile. A few breaths of our plant-based essential oil mist will mellow you out, quiet the mind, and lull you to bed.</p>
-                <button>Visit Shop</button>
+                <motion.h2 
+                    initial={{ y: 100, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ type: "spring", duration: 1, delay: 0.4 }}
+                    className="header-text visit-header-text"
+                >Visit Our Shop</motion.h2>
+                <motion.p 
+                initial={{ y: 50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                transition={{ type: "spring", duration: 1, delay: 0.9 }}
+                className="subtext visit-subtext">Our Personal Diffuser is an aromatherapy device that contains a blend of melatonin, lavender, and chamomile. A few breaths of our plant-based essential oil mist will mellow you out, quiet the mind, and lull you to bed.</motion.p>
+                <motion.button
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ type: "spring", duration: 1, delay: 1 }}
+                >
+                    Visit Shop
+                </motion.button>
             </div>
            <Product/>
            <Footer/>
