@@ -13,7 +13,42 @@
     width: 10%;
 }
 .footer-body{
+    margin-top: 48px;
     display: flex;
     justify-content: space-between;
     gap: 53px;
+}
+.footer-nav{
+    display: flex;
+    gap: 50px;
+}
+.nav-head{
+    margin-bottom: 21px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.nav-body{
+    margin-bottom: 16px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ABABAB;
+}
+.nav-body-2{
+    margin-bottom: 16px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.about-text{
+    margin-bottom: 21px;
+}
+.about-text span{
+    color: #8FE2FF;
+}
+.nav-email{
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
 }
