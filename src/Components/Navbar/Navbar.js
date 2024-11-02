@@ -1,7 +1,7 @@
 import "./Navbar.css"
 import logo from "../../Assets/logo.png"
 import { Link } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
 const Navbar = () => {
     const [navshow, setnavshow] = useState(false)
@@ -15,6 +15,14 @@ const Navbar = () => {
                 <img src={logo}></img>
             </div>
             <div className={navshow ? "navbar-nav-mobile":"navbar-nav"}>
+                <div className="mobile-nav-header">
+                    <div className="logo">
+                        <img src={logo}></img>
+                    </div>
+                    <div className="nav-close" onClick={handleNav}>
+                        <FaTimes/>
+                    </div>
+                </div>
                 <nav>
                     <ul>
                         <Link to="/"><li>Home</li></Link>

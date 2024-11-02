@@ -77,12 +77,10 @@
     font-weight: 400;
 }
 @media (max-width: 1130px) {
-    .faq{
-        padding: 12.25rem 4.5rem 0rem 4.5rem;
-    }
     .faq-content{
         gap: 70px;
         margin-top: 50px;
+        padding: 4.4rem 6rem;
     }
     .accordion{
         padding: 1.3rem 1rem;
@@ -92,13 +90,11 @@
     }
 }
 @media (max-width: 800px) {
-    .faq{
-        padding: 6.1rem 1.8rem 0rem 1.8rem;
-    }
     .faq-content{
         flex-direction: column;
         gap: 30px;
         margin-top: 30px;
+        padding: 3rem 2rem;
     }
     .faq-nav-sub{
         display: flex; 
@@ -109,6 +105,15 @@
         margin-right: 15px;
         font-size: 0.8rem;
     }
+    .active-nav::after{
+        content: "";
+        position: absolute;
+        top: -10px;
+        right: 0rem;
+        width: 50px;
+        height: 27px;
+        background-color: #FFD7231A;
+    }
     .faq-content-left, .faq-content-right{
         width: 100%;
     }
@@ -117,8 +122,6 @@
     }
     .accordion{
         padding: 1.3rem 1rem;
-        border-radius: 5px;
-        margin-bottom: 10px;
     }
     .question, .answer{
         font-size: 0.8rem;

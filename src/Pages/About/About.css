@@ -35,3 +35,9 @@
     border-radius: 5px;
     border: 1px solid #12305B;
 }
+@media only screen and (max-width: 800px){
+    .about-header{
+        width: 100%;
+        height: 450px;
+    }
+}

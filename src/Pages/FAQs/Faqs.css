@@ -7,7 +7,7 @@
 .faq-search{
     margin-top: 17px;
     padding: 1.67rem 3.6rem;
-    width: 70%;
+    width: 80%;
     background-color: #FFFFFF;
     border-radius: 10px;
     display: flex;
@@ -25,4 +25,21 @@
     color: #12305B;
     font-size: 1.125rem;
     font-weight: 400px;
+}
+@media only screen and (max-width: 800px){
+    .faq-header{
+        height: 550px;
+    }
+    .faq-search{
+        padding: 1rem 2.5rem;
+        width: 100%;
+    }
+    .faq-search input{
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        color: #12305B;
+        font-size: 0.9rem;
+        font-weight: 400px;
+    }
 }
