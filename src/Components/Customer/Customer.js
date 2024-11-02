@@ -2,7 +2,7 @@ import "./Customer.css"
 import { IoMdArrowDropright } from "react-icons/io";
 import { CustomerTestimonials, Testimonials } from "../data";
 import profile from "../../Assets/person.png"
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -24,13 +24,13 @@ const Customer = () => {
                 </div>
                 <div className="customer-right">
                     <Swiper
-                        autoplay={{ delay: 50, disableOnInteraction: false }}
-                        modules={[Navigation, Pagination, Scrollbar, A11y]}
+                        autoplay={{ delay: 3000, disableOnInteraction: false }}
+                        modules={[Navigation, Autoplay, Pagination, Scrollbar, A11y]}
                         spaceBetween={50}
                         slidesPerView={1}
-                        navigation
-                        pagination={{ clickable:  false}}
-                        scrollbar={{ draggable: false }}
+                        navigation={false}
+                        pagination={false}
+                        scrollbar={false}
                         onSwiper={(swiper) => console.log(swiper)}
                     >
                         {CustomerTestimonials.map((testimonial, index) => (
