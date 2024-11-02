@@ -1,0 +1,126 @@
+
+.faq-content{
+    display: flex;
+    gap: 100px;
+    padding: 4.4rem 9.375rem;
+    margin-top: 60px;
+}
+.faq-content-left{
+    width: 20%;
+}
+.faq-content-right{
+    padding: 3rem 2.5rem;
+    width: 80%;
+    height: 600px;
+    overflow-y: scroll;
+    background-color: white;
+}
+.faq-content-right::-webkit-scrollbar{
+    display: none;
+}
+.faq-nav-head{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #183D36;
+}
+.faq-nav-sub p {
+    margin-top: 30px;
+    font-size: 1.125rem;
+    font-weight: 400;
+    cursor: pointer;
+    color: #12305B;
+}
+.active-nav{
+    width: max-content;
+    position: relative;
+    font-weight: 700 !important;
+}
+.active-nav::after{
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -3rem;
+    width: 126px;
+    height: 47px;
+    background-color: #FFD7231A;
+}
+.accordion{
+    padding: 1.8rem 0rem;
+    margin-bottom: 0px;
+    border-top: 1px solid #183D36;
+    border-bottom: 1px solid #183D36;
+}
+.accordion-content-question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.accordion-content-question div svg{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #183D36;
+}
+.question{
+    cursor: pointer;
+}
+.question, .answer{
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #12305B;
+}
+.question-show{
+    font-weight: 500;
+}
+.answer{
+    font-size: 1rem;
+    margin-top: 20px;
+    font-weight: 400;
+}
+@media (max-width: 1130px) {
+    .faq{
+        padding: 12.25rem 4.5rem 0rem 4.5rem;
+    }
+    .faq-content{
+        gap: 70px;
+        margin-top: 50px;
+    }
+    .accordion{
+        padding: 1.3rem 1rem;
+    }
+    .question, .answer{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 800px) {
+    .faq{
+        padding: 6.1rem 1.8rem 0rem 1.8rem;
+    }
+    .faq-content{
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 30px;
+    }
+    .faq-nav-sub{
+        display: flex; 
+        flex-wrap: wrap;    
+    }
+    .faq-nav-sub p{
+        margin-top: 5px;
+        margin-right: 15px;
+        font-size: 0.8rem;
+    }
+    .faq-content-left, .faq-content-right{
+        width: 100%;
+    }
+    .faq-content-right{
+        padding: 1.375rem 0.8rem;
+    }
+    .accordion{
+        padding: 1.3rem 1rem;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    .question, .answer{
+        font-size: 0.8rem;
+    }
+}

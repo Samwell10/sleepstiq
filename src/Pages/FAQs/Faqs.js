@@ -1,6 +1,8 @@
 import { IoSearch } from "react-icons/io5";
 import Navbar from "../../Components/Navbar/Navbar";
 import "./Faqs.css";
+import Faq from "../../Components/Faq/Faq";
+import Footer from "../../Components/Footer/Footer";
 const FAQs = () => {
     return ( 
         <div className="faq">
@@ -18,6 +20,14 @@ const FAQs = () => {
                     </div>
                 </div>
             </div>
+            <div className="faq-body">
+                <Faq/>
+                {/* <div className="faq-nav">
+
+                </div>
+                <div className="faq-body-inner"></div> */}
+            </div>
+            <Footer/>
         </div>
     );
 }
