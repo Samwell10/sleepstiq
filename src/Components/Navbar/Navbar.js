@@ -26,10 +26,10 @@ const Navbar = () => {
                 </div>
                 <nav>
                     <ul>
-                        <Link to="/" className={location.pathname === "/" ? "active" : ""}><li>Home</li></Link>
-                        <Link to="/about" className={location.pathname === "/about" ? "active" : ""}><li>About</li></Link>
+                        <Link to="/" ><li className={location.pathname === "/" ? "active" : ""}>Home</li></Link>
+                        <Link to="/about" ><li className={location.pathname === "/about" ? "active" : ""}>About</li></Link>
                         <li>Shop</li>
-                        <Link to="/FAQs" className={location.pathname === "/FAQs" ? "active" : ""}><li>FAQs</li></Link>
+                        <Link to="/FAQs" ><li className={location.pathname === "/FAQs" ? "active" : ""}>FAQs</li></Link>
                     </ul>
                 </nav>
             </div>

@@ -23,7 +23,7 @@
     color: #12305B;
 }
 .active{
-    font-weight: 700;
+    font-weight: 700 !important;
 }
 .nav-hambuger{
     display: none;
