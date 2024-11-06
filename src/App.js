@@ -5,18 +5,20 @@ import About from './Pages/About/About';
 import FAQs from './Pages/FAQs/Faqs';
 import Home from './Pages/Home/Home';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Test from './Pages/Home/Test';
 
 function App() {
   return (
-    <BrowserRouter>
+    // <BrowserRouter>
       <div className="App">
-      <Routes>
+        <Test/>
+      {/* <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/about' element={<About/>}></Route>
           <Route path='/FAQs' element={<FAQs/>}></Route>
-        </Routes>
+        </Routes> */}
       </div>
-    </BrowserRouter>
+    // </BrowserRouter>
   );
 }
 
